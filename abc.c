@@ -1,21 +1,14 @@
-#include <stdio.h> 
+#include<stdio.h>
+int main(){
+  int num1, num2, difference;
   
-int main() 
-{ 
-    int A, B, sum = 0; 
+  //Asking for input
+  printf("Enter first number: ");
+  scanf("%d", &num1);
+  printf("Enter second number: ");
+  scanf("%d", &num2);
   
-    // Ask user to enter the two numbers 
-    printf("Enter two numbers A and B : \n"); 
-  
-    // Read two numbers from the user || A = 2, B = 3 
-    scanf("%d%d", &A, &B); 
-  
-    // Calculate the addition of A and B 
-    // using '+' operator 
-    sum = A + B; 
-  
-    // Print the sum 
-    printf("Sum of A and B is: %d", sum); 
-  
-    return 0; 
-
+  difference = num1 - num2;
+  printf("Difference of %d and %d is: %d", num1, num2, difference);
+  return 0;
+}
